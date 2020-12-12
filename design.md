@@ -15,6 +15,8 @@ And at last I will output the following data For each paper:
 - n_citation
 - publisher
 
+## design information
+
 In this implementation, for every paper, I store the id and references, along with some additional information. (in the FormattedOutput.java file)
 
 First I get every line from the file, during this process, I create the following data structures:
@@ -26,4 +28,4 @@ The Paper class contains the references and ID of that paper. As well as a Forma
 
 While I create these data structures I output the papers containing the keyword. (I log them in the terminal)
 
-Next, to create the tier lists, I simply search every file in allPapers and check whether any of the refernces exist in the currentPaper map. I do this using a parallel stream. The list is sorted, this the tier list will be sorted by id. We then output the list. After this, we then update currentPapers with a new map.
+Next, to create the tier lists, I simply search every file in allPapers and check whether any of the refernces exist in the currentPaper map. I do this using a parallel stream. The list is sorted, this the tier list will be sorted by id. We then output the list. After this, I then update currentPapers with a new map.
